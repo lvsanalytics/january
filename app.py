@@ -89,7 +89,7 @@ bot_user_id = None
 
 # Define the LLM with a callback manager for streaming output
 llm = Ollama(
-    base_url="http://host.docker.internal:11434",
+    base_url="http://localhost:11434",
 
     model='llama3',
     callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
