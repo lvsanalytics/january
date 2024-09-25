@@ -99,5 +99,5 @@ curl http://localhost:11434
 You should see that Ollama is accessible. This will also work with http://0.0.0.0:11434 and http://127.0.1.0:11434
 
 ```
-Ollama is runningroot@aibox
+Ollama is runningroot@host
 ````
