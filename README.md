@@ -16,7 +16,7 @@ sudo mkdir -p /etc/systemd/system/ollama.service.d/
 ```
 
 - This creates a directory (-p any parent directories if they don't exist)
-- This specific directory is specifically for systemd override files. When systemd runs it will check in here for any additional configuration data, specifically ollama.service
+- This directory is for systemd override files. When systemd runs it will check in here for any additional configuration data. In this case ollama.service
 
 2. Create Override Configuration File
 
@@ -37,14 +37,13 @@ printf '[Service]\nEnvironment="OLLAMA_HOST=0.0.0.0"\n' | sudo tee /etc/systemd/
 ```
 sudo systemctl daemon-reload
 sudo systemctl restart ollama
-
 ```
 
 # Building and Running January
 
 ## Create a Slack Application
 
-Go to api.slack.com and create a bot application for the Workspace. You need to setup an APP Key and a Bot Key with the necessary permissions. Then the keys will need to be added to an environment file.
+Go to https://api.slack.com and create a bot application for the Workspace. You need to setup an APP Key and a Bot Key with the necessary permissions. Then the keys will need to be added to an environment file.
 
 ## .ENV File
 You will need to create a .env file with the following variables
@@ -83,8 +82,10 @@ The following can be added to a Docker compose file
 
 If you recieve errors accessing Ollama you can try installing a Docker container and using either sh or bash to run networking commands.
 
+```
 docker run -itd --rm --network host --name testerman ubuntu
 sudo docker exec -it testerman bin/bash
+```
 
 When in the ubuntu container
 
