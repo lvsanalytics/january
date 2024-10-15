@@ -21,7 +21,9 @@ dataclasses-json==0.6.7
 DateTime==5.5
 Deprecated==1.2.14
 docker==7.1.0
+docx2txt==0.8
 durationpy==0.7
+et-xmlfile==1.1.0
 fastapi==0.115.0
 filelock==3.16.1
 flatbuffers==24.3.25
@@ -75,6 +77,7 @@ nvidia-nvjitlink-cu12==12.6.68
 nvidia-nvtx-cu12==12.1.105
 oauthlib==3.2.2
 onnxruntime==1.19.2
+openpyxl==3.1.5
 opentelemetry-api==1.27.0
 opentelemetry-exporter-otlp-proto-common==1.27.0
 opentelemetry-exporter-otlp-proto-grpc==1.27.0
@@ -88,6 +91,7 @@ opentelemetry-util-http==0.48b0
 orjson==3.10.7
 overrides==7.7.0
 packaging==24.1
+pandas==2.2.3
 pillow==10.4.0
 posthog==3.6.6
 protobuf==4.25.5
@@ -97,6 +101,7 @@ pydantic==2.9.2
 pydantic-settings==2.5.2
 pydantic_core==2.23.4
 Pygments==2.18.0
+PyPDF2==3.0.1
 PyPika==0.48.9
 pyproject_hooks==1.1.0
 python-dateutil==2.9.0.post0
@@ -132,6 +137,7 @@ triton==3.0.0
 typer==0.12.5
 typing-inspect==0.9.0
 typing_extensions==4.12.2
+tzdata==2024.2
 urllib3==2.2.3
 uvicorn==0.30.6
 uvloop==0.20.0
